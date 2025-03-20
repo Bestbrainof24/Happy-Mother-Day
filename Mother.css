@@ -1,0 +1,145 @@
+/* body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #800080;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.image-placeholder {
+    width: 300px;
+    height: 200px;
+    background: lightgray;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: black;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.confetti {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1; 
+    }
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #800080;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 5vw;
+    max-width: 90%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 5vw;
+    animation: fadeIn 2s ease-in-out;
+}
+
+p {
+    font-size: 2vw;
+    max-width: 90%;
+    margin: auto;
+}
+
+.image-placeholder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.image-placeholder img {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.confetti {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1; 
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 7vw;
+    }
+    p {
+        font-size: 3vw;
+    }
+    .image-placeholder img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-placeholder img {
+        width: 80%;
+    }
+    h1 {
+        font-size: 8vw;
+    }
+    p {
+        font-size: 4vw;
+    }
+}
